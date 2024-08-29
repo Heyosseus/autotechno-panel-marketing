@@ -1,5 +1,6 @@
 <x-layout>
     <x-header></x-header>
+    @include('components.success-message')
 
     <div id="contact_us" class="flex flex-col lg:flex-row justify-around  h-full bg-white px-4 lg:px-10 py-5 mb-20 mt-6 lg:mt-16">
         <div class="px-2 sm:px-8 lg:px-5 ">
@@ -7,30 +8,30 @@
             <div class="w-16 m-auto lg:m-1 lg:w-1/6 h-[1px] bg-neutral "></div>
             <h1 class="text-4xl md:text-6xl font-bold text-gray-900 tracking-wide mt-10">Fill out a form</h1>
 
-            <form action="" method="post" class="pl-1">
+            <form action="{{route('contact.store')}}" method="post" class="pl-1">
                 @csrf
                 <div class="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-4 mt-10">
                     <div class="flex flex-col w-full lg:w-1/2">
                         <label for="name" class="text-sm text-gray-900 font-bold mb-1">Name</label>
                         <input type="text" name="name" id="name" class="border border-gray-300 outline-0 bg-white p-3 rounded-md"
-                               placeholder="name">
+                               placeholder="name" required>
                     </div>
                     <div class="flex flex-col w-full lg:w-1/2">
                         <label for="email" class="text-sm text-gray-900 font-bold mb-1">Email</label>
                         <input type="email" name="email" id="email" class="border border-gray-300 outline-0 bg-white p-3 rounded-md"
-                               placeholder="email">
+                               placeholder="email" required>
                     </div>
                 </div>
                 <div class="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-4 mt-10">
                     <div class="flex flex-col w-full lg:w-1/2">
                         <label for="company" class="text-sm text-gray-900 font-bold mb-1">Company</label>
                         <input type="text" name="company" id="company" class="border border-gray-300 outline-0 bg-white p-3 rounded-md"
-                               placeholder="company">
+                               placeholder="company" required>
                     </div>
                     <div class="flex flex-col w-full lg:w-1/2">
                         <label for="text" class="text-sm text-gray-900 font-bold mb-1">Subject</label>
                         <input type="text" name="text" id="text" class="border border-gray-300 outline-0 bg-white p-3 rounded-md"
-                                   placeholder="subject">
+                                   placeholder="subject" required>
                     </div>
 
                 </div>
@@ -96,5 +97,5 @@
             </div>
         </div>
     </div>
-{{--    <x-footer></x-footer>--}}
 </x-layout>
+
