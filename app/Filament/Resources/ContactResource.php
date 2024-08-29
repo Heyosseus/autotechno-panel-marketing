@@ -31,7 +31,27 @@ class ContactResource extends Resource
     {
         return $table
             ->columns([
-                //
+                Tables\Columns\TextColumn::make('name')
+                    ->searchable()
+                    ->sortable(),
+                Tables\Columns\TextColumn::make('email')
+                    ->searchable()
+                    ->sortable(),
+                Tables\Columns\TextColumn::make('company')
+                    ->searchable()
+                    ->sortable(),
+                Tables\Columns\TextColumn::make('text')
+                    ->searchable()
+                    ->sortable(),
+                Tables\Columns\TextColumn::make('status')
+                    ->searchable()
+                    ->sortable(),
+                Tables\Columns\TextColumn::make('ip')
+                    ->searchable()
+                    ->sortable(),
+                Tables\Columns\TextColumn::make('created_at')
+                    ->searchable()
+                    ->sortable(),
             ])
             ->filters([
                 //
@@ -57,6 +77,7 @@ class ContactResource extends Resource
     {
         return [
             'index' => Pages\ListContacts::route('/'),
+            'edit' => Pages\EditContacts::route('/{record}/edit'),
         ];
     }
 }
