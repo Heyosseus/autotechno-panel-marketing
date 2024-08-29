@@ -1,6 +1,6 @@
-<footer class="footer bg-neutral text-neutral-content items-center p-4">
+<footer class="footer bg-neutral text-neutral-content items-center p-10">
     <aside class="grid-flow-col items-center">
-        <p>Copyright © {{\Carbon\Carbon::now()->format('Y')}} - All rights reserved</p>
+        <p>© {{\Carbon\Carbon::now()->format('Y')}} - All rights reserved</p>
     </aside>
     <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
         <a href="https://www.facebook.com/AutotechnoLLC" target="_blank">

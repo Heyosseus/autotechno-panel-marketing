@@ -33,7 +33,7 @@
                 class="absolute inset-x-0 bottom-0 h-[2px]  bg-blue-950 origin-left transform scale-x-0 transition-transform duration-700  group-hover:scale-x-100">
                     </span>
         </a>
-        <a href="{{ env('APP_URL') }}/#contact_us" class="block py-2 text-xl relative group cursor-pointer">
+        <a href="/contact" class="block py-2 text-xl relative group cursor-pointer">
             <span class="flex justify-between items-center"><p>Contact</p> <img src="{{asset('icons/rightArrow.svg')}}" alt="" width="15"></span>
             <span
                 class="absolute inset-x-0 bottom-0 h-[2px] bg-black origin-left transform scale-x-0 transition-transform duration-700 group-hover:scale-x-100">

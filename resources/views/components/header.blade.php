@@ -7,7 +7,7 @@
             <li><a>About</a></li>
             <li><a>Services</a></li>
             <li><a>Products</a></li>
-            <li><a>News</a></li>
+            <li><a href="/news">News</a></li>
             <li>
                 <details>
                     <summary>Parent</summary>
