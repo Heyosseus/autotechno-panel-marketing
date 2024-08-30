@@ -8,15 +8,6 @@
             <li><a>Services</a></li>
             <li><a>Products</a></li>
             <li><a href="/news">News</a></li>
-            <li>
-                <details>
-                    <summary>Parent</summary>
-                    <ul class="p-2 text-black">
-                        <li><a>Submenu 1</a></li>
-                        <li><a>Submenu 2</a></li>
-                    </ul>
-                </details>
-            </li>
         </ul>
     </div>
     <div class="navbar-end ">

@@ -1,10 +1,13 @@
 <x-layout>
     <x-header></x-header>
-    <div class="p-8 lg:p-16 ">
+
+    <div class="p-8 h-[80vh]">
         <div class="flex flex-col">
-            <div class="flex justify-between cursor-pointer">
+            <div class="flex justify-between cursor-pointer items-center">
                 <div onclick="window.history.back();" class="flex items-center space-x-1 btn btn-circle outline-none border-none"><img src="{{asset('icons/longLeftArrowIcon.svg')}}" alt="" width="20">
                 </div>
+                <h1 class="lg:text-4xl  font-bold leading-tight text-gray-800 ml-auto mr-20">Latest <em class="text-red-900">News</em> and updates</h1>
+
             </div>
             <div class="flex flex-col md:flex-row justify-between mt-5 w-full shadow-lg p-2 sm:p-6">
                 <div class="lg:w-1/3 ">
@@ -26,4 +29,5 @@
             </div>
         </div>
     </div>
+    <x-footer></x-footer>
 </x-layout>

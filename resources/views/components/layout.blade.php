@@ -20,7 +20,7 @@
 
 <body class="
 {{ app()->getLocale() === 'ka' ? 'georgian' : 'non-georgian' }}
-h-[100px] scrollbar scrollbar-thumb-red-800 scrollbar-track-gray-300">
+ scrollbar scrollbar-thumb-red-800 scrollbar-track-gray-300">
 {{$slot}}
 </body>
 

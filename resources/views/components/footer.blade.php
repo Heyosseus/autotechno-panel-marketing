@@ -1,4 +1,4 @@
-<footer class="footer bg-neutral text-neutral-content items-center p-10">
+<footer class="footer bg-neutral text-neutral-content items-center p-10 ">
     <aside class="grid-flow-col items-center">
         <p>© {{\Carbon\Carbon::now()->format('Y')}} - All rights reserved</p>
     </aside>
